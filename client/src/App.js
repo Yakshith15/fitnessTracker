@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Workouts from "./pages/Workouts";
+import { BMICalculator } from "./components/BMICalculator";
+import { FoodInfo } from "./components/FoodInfo";
 
 const Container = styled.div`
   width: 100%;
@@ -31,6 +33,8 @@ function App() {
             <Routes>
               <Route path="/" exact element={<Dashboard />} />
               <Route path="/workouts" exact element={<Workouts />} />
+              <Route path="/bmi" exact element={<BMICalculator />} />
+              <Route path="/food" exact element={<FoodInfo/> } />
             </Routes>
           </Container>
         ) : (

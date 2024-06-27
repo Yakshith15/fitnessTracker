@@ -39,7 +39,8 @@ const connectDB = () => {
       console.error(err);
     });
 };
-
+console.log(process.env.MONGODB_URL);
+console.log(process.env.JWT);
 const startServer = async () => {
   try {
     connectDB();
